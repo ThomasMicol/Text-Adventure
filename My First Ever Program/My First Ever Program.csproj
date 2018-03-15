@@ -42,18 +42,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseInteractable.cs" />
     <Compile Include="Biomes.cs" />
     <Compile Include="Cave.cs" />
     <Compile Include="ForestWorldTile.cs" />
     <Compile Include="GameWorld.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="IInteractable.cs" />
+    <Compile Include="IStageHandler.cs" />
     <Compile Include="IWorldTile.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultPackage.cs" />
     <Compile Include="Shack.cs" />
+    <Compile Include="StageHandler.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -17,6 +17,7 @@ namespace My_First_Ever_Program
 
         public void Run()
         {
+            Console.WriteLine("You open your eyes to the world around you.");
             while(this.isRunning == true)
             {
                 Console.WriteLine(this.myPlayer.GetState());
