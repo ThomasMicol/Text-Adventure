@@ -20,9 +20,17 @@ namespace My_First_Ever_Program
 
         public string GetState()
         {
-            myCurrentTarget = Surroundings.GetInteractable();
-            return myCurrentTarget.GetInteractionString();
+            if(myCurrentTarget == null)
+            {
+                myCurrentTarget = Surroundings.GetInteractable();
+                return myCurrentTarget.GetInteractionString();
+            }
+            else
+            {
+                return myCurrentTarget.GetInteractableStage();
+            }
         }
+
         
         protected void EvaluateResultPackage(ResultPackage aPack)
         {
