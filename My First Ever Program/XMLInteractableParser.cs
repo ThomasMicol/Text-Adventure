@@ -10,7 +10,7 @@ namespace My_First_Ever_Program
         public void Parse(List<IInteractable> InteractableList, Player aPlayer)
         {
             XmlDocument InteractableDoc = new XmlDocument();
-            InteractableDoc.Load("interactables.xml");
+            InteractableDoc.Load("resources/interactables.xml");
             foreach(XmlNode node in InteractableDoc.SelectNodes("interactables//interactable"))
             {
                 XmlNode aNode = node.SelectSingleNode("Name");
