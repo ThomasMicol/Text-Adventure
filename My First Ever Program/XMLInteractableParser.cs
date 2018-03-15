@@ -21,6 +21,14 @@ namespace My_First_Ever_Program
                 aNode = aNode.NextSibling;
                 string DiscoveredString = aNode.InnerText;
                 IInteractable aInteractable = new InteractableTemplate(Name, DiscoveredString);
+                foreach (XmlNode interaction in node.SelectNodes("InteractionTable//Interaction"))
+                {
+                    XmlNode aInteractionNode = interaction.SelectSingleNode("InteractionKey");
+                    string key = aInteractionNode.InnerText;
+                    string value = aInteractionNode.NextSibling.InnerText;
+                    Console.WriteLine("interaction is defined as - Key: " + key + " - Value: " + value);
+                    aInteractable.AddInteraction(key, value);
+                }
                 InteractableList.Add(aInteractable);
 
             }

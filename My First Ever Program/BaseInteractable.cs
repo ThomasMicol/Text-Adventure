@@ -34,5 +34,10 @@ namespace My_First_Ever_Program
 
             return new ResultPackage();
         }
+
+        public void AddInteraction(string key, string value)
+        {
+            InteractionTable.Add(key, value);
+        }
     }
 }

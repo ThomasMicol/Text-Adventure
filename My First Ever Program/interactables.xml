@@ -18,20 +18,64 @@
   <interactable>
     <Name>Shack</Name>
     <DiscoveredString>There seems to be a plume of smoke extending from a nearby Shack</DiscoveredString>
+    <InteractionTable>
+      <Interaction>
+        <InteractionKey>look</InteractionKey>
+        <InteractionValue>You decide to peek into the cave mouth.</InteractionValue>
+      </Interaction>
+
+      <Interaction>
+        <InteractionKey>leave</InteractionKey>
+        <InteractionValue>You turn tail and run the other direction.</InteractionValue>
+      </Interaction>
+    </InteractionTable>
   </interactable>
 
   <interactable>
     <Name>Forest</Name>
     <DiscoveredString>You spot a forest with a sense of dread eminating from its perimeter.</DiscoveredString>
+    <InteractionTable>
+      <Interaction>
+        <InteractionKey>look</InteractionKey>
+        <InteractionValue>You decide to peek into the cave mouth.</InteractionValue>
+      </Interaction>
+
+      <Interaction>
+        <InteractionKey>leave</InteractionKey>
+        <InteractionValue>You turn tail and run the other direction.</InteractionValue>
+      </Interaction>
+    </InteractionTable>
   </interactable>
 
   <interactable>
     <Name>Beach</Name>
     <DiscoveredString>You stumble across a beautiful golden beach teaming with life.</DiscoveredString>
+    <InteractionTable>
+      <Interaction>
+        <InteractionKey>look</InteractionKey>
+        <InteractionValue>You decide to peek into the cave mouth.</InteractionValue>
+      </Interaction>
+
+      <Interaction>
+        <InteractionKey>leave</InteractionKey>
+        <InteractionValue>You turn tail and run the other direction.</InteractionValue>
+      </Interaction>
+    </InteractionTable>
   </interactable>
 
   <interactable>
     <Name>Abandoned Mine</Name>
     <DiscoveredString>You have found a long abandoned dwarven mine. The bowels of which have long since been scraped clean of any valuable ore that was once abundant here.</DiscoveredString>
+    <InteractionTable>
+      <Interaction>
+        <InteractionKey>look</InteractionKey>
+        <InteractionValue>You decide to peek into the cave mouth.</InteractionValue>
+      </Interaction>
+
+      <Interaction>
+        <InteractionKey>leave</InteractionKey>
+        <InteractionValue>You turn tail and run the other direction.</InteractionValue>
+      </Interaction>
+    </InteractionTable>
   </interactable>
 </interactables>
