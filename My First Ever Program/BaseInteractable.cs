@@ -9,7 +9,8 @@ namespace My_First_Ever_Program
     class BaseInteractable : IInteractable
     {
         protected IStageHandler myStageHandler;
-        protected string InteractionString;
+        protected string Name;
+        protected string DiscoveredString;
         protected Dictionary<string, string> InteractionTable = new Dictionary<string, string>();
         protected string UnrecognizedMove = "Why would you want to do that?";
 
@@ -20,7 +21,7 @@ namespace My_First_Ever_Program
 
         public string GetInteractionString()
         {
-            return InteractionString;
+            return DiscoveredString;
         }
 
         public ResultPackage RunCommand(string aMove)

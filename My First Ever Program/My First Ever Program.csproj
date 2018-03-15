@@ -49,6 +49,7 @@
     <Compile Include="GameWorld.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="IInteractable.cs" />
+    <Compile Include="InteractableTemplate.cs" />
     <Compile Include="IStageHandler.cs" />
     <Compile Include="IWorldTile.cs" />
     <Compile Include="Player.cs" />
@@ -57,9 +58,16 @@
     <Compile Include="ResultPackage.cs" />
     <Compile Include="Shack.cs" />
     <Compile Include="StageHandler.cs" />
+    <Compile Include="XMLInteractableParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="interactables.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

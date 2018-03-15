@@ -13,8 +13,7 @@ namespace My_First_Ever_Program
         {
             myBiome = Biomes.Forest;
             BiomeDescriptor = "Rolling hills, green pastures and trees as far as the eye can see. \n If only this was the final destination of your journey";
-            myInteractables.Add(new Cave());
-            myInteractables.Add(new Shack());
+            new XMLInteractableParser().Parse(myInteractables);
         }
 
         public IInteractable GetInteractable()

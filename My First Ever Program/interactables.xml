@@ -1,0 +1,27 @@
+﻿<interactables>
+  <interactable>
+    <Name>Cave</Name>
+    <DiscoveredString>You spot a dark, dank cave.</DiscoveredString>
+    <InteractionTable>
+      <Interaction>
+        <InteractionKey>look</InteractionKey>
+        <InteractionValue>You decide to peek into the cave mouth.</InteractionValue>
+      </Interaction>
+
+      <Interaction>
+        <InteractionKey>leave</InteractionKey>
+        <InteractionValue>You turn tail and run the other direction.</InteractionValue>
+      </Interaction>
+    </InteractionTable>
+  </interactable>
+
+  <interactable>
+    <Name>Shack</Name>
+    <DiscoveredString>WOw a shack oWo</DiscoveredString>
+  </interactable>
+
+  <interactable>
+    <Name>Forest</Name>
+    <DiscoveredString>WOw a Forest oWo</DiscoveredString>
+  </interactable>
+</interactables>

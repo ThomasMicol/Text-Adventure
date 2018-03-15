@@ -8,7 +8,7 @@ namespace My_First_Ever_Program
 
         public Shack()
         {
-            InteractionString = "There seems to be smoke coming from a nearby shack";
+            DiscoveredString = "There seems to be smoke coming from a nearby shack";
 
             InteractionTable.Add("look", "You walk over to the shack and inspect it futher.");
             InteractionTable.Add("die", "You curl up and die.");
