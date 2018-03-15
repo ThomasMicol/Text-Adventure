@@ -7,7 +7,7 @@ namespace My_First_Ever_Program
     {
         string GetInteractionString();
         ResultPackage RunCommand(string aMove);
-
+        string GetInteractableStage();
         
     }
 }
