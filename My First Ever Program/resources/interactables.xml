@@ -1,0 +1,56 @@
+﻿<interactables>
+  <interactable>
+    <Name>Cave</Name>
+    <DiscoveredString>You spot a dark, dank cave.</DiscoveredString>
+    <InteractionTable>
+      <Interaction>
+        <InteractionKey>look</InteractionKey>
+        <InteractionValue>You decide to peek into the cave mouth.</InteractionValue>
+        <InteractionAction>Investigate</InteractionAction>
+      </Interaction>
+
+      <Interaction>
+        <InteractionKey>leave</InteractionKey>
+        <InteractionValue>You turn tail and run the other direction.</InteractionValue>
+        <InteractionAction>Leave</InteractionAction>
+      </Interaction>
+    </InteractionTable>
+  </interactable>
+
+  <interactable>
+    <Name>Shack</Name>
+    <DiscoveredString>You find a shack, a sense of dread washes over you.</DiscoveredString>
+    <InteractionTable>
+      <Interaction>
+        <InteractionKey>look</InteractionKey>
+        <InteractionValue>Ignoring your doubts you hesitantly peer through the door.</InteractionValue>
+        <InteractionAction>Investigate</InteractionAction>
+      </Interaction>
+
+      <Interaction>
+        <InteractionKey>leave</InteractionKey>
+        <InteractionValue>You leave the sinister shack alone. It is probably for the best.</InteractionValue>
+        <InteractionAction>Leave</InteractionAction>
+      </Interaction>
+    </InteractionTable>
+  </interactable>
+  
+  <interactable>
+    <Name>Forest</Name>
+    <DiscoveredString>You find a large forest, teaming with life.</DiscoveredString>
+    <InteractionTable>
+      <Interaction>
+        <InteractionKey>look</InteractionKey>
+        <InteractionValue>You set off on the path leading into the heart of the forest</InteractionValue>
+        <InteractionAction>Investigate</InteractionAction>
+      </Interaction>
+
+      <Interaction>
+        <InteractionKey>leave</InteractionKey>
+        <InteractionValue>You decide you have other things to do than frolic in a forest.</InteractionValue>
+        <InteractionAction>Leave</InteractionAction>
+      </Interaction>
+    </InteractionTable>
+  </interactable>
+
+</interactables>

@@ -1,0 +1,15 @@
+﻿<StageTables>
+  <StageTable>
+    <AssociatedInteractable>Cave</AssociatedInteractable>
+    <StageElement>
+      <StageID>0</StageID>
+      <StageOutText>You find a chest</StageOutText>
+      <StageAction>SwitchPlayerFocus</StageAction>
+    </StageElement>
+    <StageElement>
+      <StageID>1</StageID>
+      <StageOutText>You come across a particularaly angry bat.</StageOutText>
+      <StageAction>SwitchPlayerFocus</StageAction>
+    </StageElement>
+  </StageTable>
+</StageTables>
