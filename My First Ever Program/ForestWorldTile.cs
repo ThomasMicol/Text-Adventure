@@ -5,15 +5,17 @@ namespace My_First_Ever_Program
 {
     internal class ForestWorldTile : IWorldTile
     {
+        protected Player myPlayer;
         protected string BiomeDescriptor;
         protected Biomes myBiome;
         protected List<IInteractable> myInteractables = new List<IInteractable>();
 
-        public ForestWorldTile()
+        public ForestWorldTile(Player aPlayer)
         {
+            myPlayer = aPlayer;
             myBiome = Biomes.Forest;
             BiomeDescriptor = "Rolling hills, green pastures and trees as far as the eye can see. \n If only this was the final destination of your journey";
-            new XMLInteractableParser().Parse(myInteractables);
+            new XMLInteractableParser().Parse(myInteractables, myPlayer);
         }
 
         public IInteractable GetInteractable()

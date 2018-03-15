@@ -2,20 +2,27 @@
 
 namespace My_First_Ever_Program
 {
-    internal class Player
+    class Player
     {
         private string name;
-        protected IWorldTile Surroundings = new ForestWorldTile();
+        protected IWorldTile Surroundings;
         protected IInteractable myCurrentTarget;
 
         public Player(string v)
         {
             this.name = v;
+            Surroundings = new ForestWorldTile(this);
         }
 
         public void Interact(string aMove)
         {
             this.EvaluateResultPackage(myCurrentTarget.RunCommand(aMove));
+        }
+
+        internal void RollNewInteractable()
+        {
+            myCurrentTarget = null;
+
         }
 
         public string GetState()

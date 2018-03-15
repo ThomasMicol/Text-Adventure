@@ -8,8 +8,9 @@ namespace My_First_Ever_Program
 {
     class InteractableTemplate : BaseInteractable
     {
-        public InteractableTemplate(string aName, string aDiscoveredString)
+        public InteractableTemplate(Player aPlayer, string aName, string aDiscoveredString)
         {
+            myPlayer = aPlayer;
             Name = aName;
             DiscoveredString = aDiscoveredString;
         }
