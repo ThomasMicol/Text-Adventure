@@ -44,10 +44,13 @@
   <ItemGroup>
     <Compile Include="Actionable.cs" />
     <Compile Include="BaseInteractable.cs" />
+    <Compile Include="Biome.cs" />
     <Compile Include="Biomes.cs" />
     <Compile Include="ForestWorldTile.cs" />
+    <Compile Include="GameController.cs" />
     <Compile Include="GameWorld.cs" />
     <Compile Include="IActionable.cs" />
+    <Compile Include="IBiome.cs" />
     <Compile Include="IEntity.cs" />
     <Compile Include="IInteractable.cs" />
     <Compile Include="InteractableTemplate.cs" />
@@ -58,16 +61,20 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ResultPackage.cs" />
     <Compile Include="StageHandler.cs" />
+    <Compile Include="TemplateWorldTile.cs" />
     <Compile Include="XMLInteractableParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="resources\interactables.xml">
+    <Content Include="resources\biome_set.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="resources\stage_sets.xml" />
+    <Content Include="resources\forest_set\interactables.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\forest_set\stage_sets.xml" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

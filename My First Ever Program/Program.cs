@@ -10,9 +10,7 @@ namespace My_First_Ever_Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("What is your name Wary Traveller");
-            Player myPLayer = new Player(Console.ReadLine());
-            new GameWorld(myPLayer).Run();
+            new GameController().LaunchGame();
         }
     }
 }

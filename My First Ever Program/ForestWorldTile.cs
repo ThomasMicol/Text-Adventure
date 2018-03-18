@@ -7,15 +7,15 @@ namespace My_First_Ever_Program
     {
         protected Player myPlayer;
         protected string BiomeDescriptor;
-        protected Biomes myBiome;
+        protected Biome myBiome;
         protected List<IInteractable> myInteractables = new List<IInteractable>();
 
-        public ForestWorldTile(Player aPlayer)
+        public ForestWorldTile(Player aPlayer, Biome aBiome)
         {
             myPlayer = aPlayer;
-            myBiome = Biomes.Forest;
+            myBiome = aBiome;
             BiomeDescriptor = "Rolling hills, green pastures and trees as far as the eye can see. \n If only this was the final destination of your journey";
-            new XMLInteractableParser().Parse(myInteractables, myPlayer);
+            new XMLInteractableParser().Parse(myBiome.GetResourceSetPath(), myInteractables, myPlayer);
         }
 
         public IInteractable GetInteractable()
@@ -25,14 +25,14 @@ namespace My_First_Ever_Program
             return myInteractables[accession];
         }
 
-        public Biomes GetBiome()
+        public IBiome GetBiome()
         {
             return this.myBiome;
         }
 
         public string GetDesciption()
         {
-            return this.BiomeDescriptor;
+            return this.myBiome.GetDescriptor();
         }
     }
 }

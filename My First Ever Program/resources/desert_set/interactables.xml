@@ -44,7 +44,7 @@
         <InteractionValue>You set off on the path leading into the heart of the forest</InteractionValue>
         <InteractionAction>Investigate</InteractionAction>
       </Interaction>
-
+      
       <Interaction>
         <InteractionKey>leave</InteractionKey>
         <InteractionValue>You decide you have other things to do than frolic in a forest.</InteractionValue>

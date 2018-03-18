@@ -1,0 +1,21 @@
+﻿<StageTables>
+  <StageTable>
+    <AssociatedInteractable>Cave</AssociatedInteractable>
+    <StageElement>
+      <StageID>0</StageID>
+      <StageTarget>Loot Chest</StageTarget>
+    </StageElement>
+    <StageElement>
+      <StageID>1</StageID>
+      <StageTarget>Angry Bat</StageTarget>
+    </StageElement>
+  </StageTable>
+
+  <StageTable>
+    <AssociatedInteractable>Shack</AssociatedInteractable>
+    <StageElement>
+      <StageID>0</StageID>
+      <StageTarget>Demonic Presense</StageTarget>
+    </StageElement>
+  </StageTable>
+</StageTables>

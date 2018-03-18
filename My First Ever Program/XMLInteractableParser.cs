@@ -7,10 +7,22 @@ namespace My_First_Ever_Program
     internal class XMLInteractableParser
     {
         
-        public void Parse(List<IInteractable> InteractableList, Player aPlayer)
+        public void Parse(string resourcePath, List<IInteractable> InteractableList, Player aPlayer)
         {
             XmlDocument InteractableDoc = new XmlDocument();
-            InteractableDoc.Load("resources/interactables.xml");
+            try
+            {
+                InteractableDoc.Load(resourcePath);
+            }catch (System.IO.FileNotFoundException)
+            {
+                Console.WriteLine("Could not find the resource file at " + resourcePath);
+                return;
+            }catch (System.IO.DirectoryNotFoundException)
+            {
+                Console.WriteLine("Could not find the directory at " + resourcePath);
+                return;
+            }
+            
             foreach(XmlNode node in InteractableDoc.SelectNodes("interactables//interactable"))
             {
                 XmlNode aNode = node.SelectSingleNode("Name");

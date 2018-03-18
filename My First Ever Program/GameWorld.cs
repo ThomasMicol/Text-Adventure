@@ -7,11 +7,13 @@ namespace My_First_Ever_Program
     {
         private Player myPlayer;
         protected List<IEntity> myEntities = new List<IEntity>();
+        protected BiomeLogger myBiomeLogger = new BiomeLogger();
         protected bool isRunning;
 
         public GameWorld(Player myPlayer)
         {
             this.myPlayer = myPlayer;
+            myPlayer.SetSurroundings(myBiomeLogger.GetRandomBiome());
             this.isRunning = true;
         }
 

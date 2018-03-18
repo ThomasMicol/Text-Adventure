@@ -11,7 +11,6 @@ namespace My_First_Ever_Program
         public Player(string v)
         {
             this.name = v;
-            Surroundings = new ForestWorldTile(this);
         }
 
         public void Interact(string aMove)
@@ -23,6 +22,12 @@ namespace My_First_Ever_Program
         {
             myCurrentTarget = null;
 
+        }
+
+        public void ForceSetTarget(IInteractable aInteractable)
+        {
+            myCurrentTarget = null;
+            myCurrentTarget = aInteractable;
         }
 
         public string GetState()
@@ -38,6 +43,10 @@ namespace My_First_Ever_Program
             }
         }
 
+        public void SetSurroundings(IBiome aBiome)
+        {
+            Surroundings = new TemplateWorldTile(this, aBiome);
+        }
         
         protected void EvaluateResultPackage(ResultPackage aPack)
         {

@@ -4,6 +4,6 @@
     {
         IInteractable GetInteractable();
         string GetDesciption();
-        Biomes GetBiome();
+        IBiome GetBiome();
     }
 }
