@@ -16,15 +16,10 @@ namespace My_First_Ever_Program
         protected Dictionary<string, string[]> InteractionTable = new Dictionary<string, string[]>();
         protected string UnrecognizedMove = "Why would you want to do that?";
 
-        public string GetInteractableStage()
-        {
-            return myStageHandler.GetCurrentStage();
-        }
+        public string GetInteractableStage(){ return myStageHandler.GetCurrentStage();}
+        public string GetInteractionString() { return DiscoveredString; }
+        public string GetNameString() { return Name;  }
 
-        public string GetInteractionString()
-        {
-            return DiscoveredString;
-        }
 
         public ResultPackage RunCommand(string aMove)
         {

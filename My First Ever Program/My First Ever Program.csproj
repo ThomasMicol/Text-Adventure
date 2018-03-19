@@ -63,6 +63,7 @@
     <Compile Include="StageHandler.cs" />
     <Compile Include="TemplateWorldTile.cs" />
     <Compile Include="XMLInteractableParser.cs" />
+    <Compile Include="XMLStageSetParser.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -71,6 +72,10 @@
     <Content Include="resources\biome_set.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="resources\desert_set\interactables.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="resources\desert_set\stage_sets.xml" />
     <Content Include="resources\forest_set\interactables.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

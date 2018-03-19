@@ -14,6 +14,7 @@ namespace My_First_Ever_Program
             this.myPlayer = player;
             this.myBiome = aBiome;
             new XMLInteractableParser().Parse(myBiome.GetResourceSetPath(), myInteractables, myPlayer);
+            new XMLStageSetParser().Parse(myBiome.GetStageSetPath(), myInteractables, myPlayer);
         }
 
         public IBiome GetBiome()
@@ -35,8 +36,9 @@ namespace My_First_Ever_Program
                 return myInteractables[accession];
             }catch (ArgumentOutOfRangeException)
             {
-                Console.WriteLine("The Biome " + myBiome.GetName() + " couldnt get its interactables and as such cannot be used as a biome");
-                throw new ArgumentOutOfRangeException("The Biome " + myBiome.GetName() + " couldnt get its interactables and as such cannot be used as a biome"); 
+                Console.WriteLine("The Biome " + myBiome.GetName() + " couldnt get its interactables and as such cannot be used as a biome\nEither restore the default sets by reinstalling or make your new sets in the resource file.\nThis window will now close");
+                Console.ReadKey();
+                throw new ArgumentOutOfRangeException(""); 
             }
 
         }

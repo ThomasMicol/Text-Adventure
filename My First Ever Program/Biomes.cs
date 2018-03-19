@@ -22,9 +22,9 @@ namespace My_First_Ever_Program
             {
                 XmlNode NameNode = node.SelectSingleNode("Name");
                 XmlNode ResourceSetNode = node.SelectSingleNode("ResourceSet");
+                XmlNode StageSetNode = node.SelectSingleNode("StageSet");
                 XmlNode DescriptorNode = node.SelectSingleNode("Descriptor");
-                myBiomes.Add(new Biome(NameNode.InnerText, ResourceSetNode.InnerText, DescriptorNode.InnerText));
-                Console.WriteLine("The biome is " + NameNode.InnerText + DescriptorNode.InnerText);
+                myBiomes.Add(new Biome(NameNode.InnerText, ResourceSetNode.InnerText, StageSetNode.InnerText , DescriptorNode.InnerText));
             }
         }
 
@@ -34,6 +34,7 @@ namespace My_First_Ever_Program
             int accession = rand.Next(0, myBiomes.Count);
             return myBiomes[accession];
         }
+        
     }
 
 } 

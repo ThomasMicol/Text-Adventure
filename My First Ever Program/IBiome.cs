@@ -5,6 +5,7 @@
         string GetName();
         string GetResourceSetPath();
         string GetDescriptor();
+        string GetStageSetPath();
 
     }
 }

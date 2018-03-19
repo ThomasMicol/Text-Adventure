@@ -2,11 +2,7 @@
   <Biome>
     <Name>Forest</Name>
     <ResourceSet>resources/forest_set/interactables.xml</ResourceSet>
+    <StageSet>resources/forest_set/stage_sets.xml</StageSet>
     <Descriptor>As you look around you notice that there is nothing but green rolling hills covered in towering pines.</Descriptor>
-  </Biome>
-  <Biome>
-    <Name>Desert</Name>
-    <ResourceSet>resources/desert_set/interactables.xml</ResourceSet>
-    <Descriptor>As you squint around at your surroundings nothing of note catches your eye except that the sand dunes of this desert seem to be unending.</Descriptor>
   </Biome>
 </BiomeSets>
